@@ -1,0 +1,67 @@
+// Colors ----------------------
+@white:							#ffffff;
+@black: 						#000000;
+@dark-grey: 					#434343;
+@grey: 							#606060;
+@light-grey:					#cccccc;
+
+// Fonts -----------------------
+@base-font-size:				14px;
+@base-line-height:				24px;
+
+@font-face {
+    font-family: 'UbuntuLight';
+    src: url('../fonts/Ubuntu-L-webfont.eot');
+    src: url('../fonts/Ubuntu-L-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Ubuntu-L-webfont.woff') format('woff'),
+         url('../fonts/Ubuntu-L-webfont.ttf') format('truetype'),
+         url('../fonts/Ubuntu-L-webfont.svg#UbuntuLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UbuntuRegular';
+    src: url('../fonts/Ubuntu-R-webfont.eot');
+    src: url('../fonts/Ubuntu-R-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Ubuntu-R-webfont.woff') format('woff'),
+         url('../fonts/Ubuntu-R-webfont.ttf') format('truetype'),
+         url('../fonts/Ubuntu-R-webfont.svg#UbuntuRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UbuntuMedium';
+    src: url('../fonts/Ubuntu-M-webfont.eot');
+    src: url('../fonts/Ubuntu-M-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Ubuntu-M-webfont.woff') format('woff'),
+         url('../fonts/Ubuntu-M-webfont.ttf') format('truetype'),
+         url('../fonts/Ubuntu-M-webfont.svg#UbuntuMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@stratos-font-light:    		'UbuntuLight', Verdana, Helvetica, Arial, sans-serif;
+@stratos-font-regular:    		'UbuntuRegular', Verdana, Helvetica, Arial, sans-serif;
+@stratos-font-medium:    		'UbuntuMedium', Verdana, Helvetica, Arial, sans-serif;
+
+// Menu ------------------------
+@menu-font-family:				@stratos-font-regular, Helvetica, sans-serif;
+@menu-font-size:				@base-font-size;
+@menu-line-height:				@base-line-height + 2;
+@menu-item-radius:				5px;
+
+// Form Feedbacks --------------
+@warning-text:             		#c09853;
+@warning-background:       		#fcf8e3;
+@warning-border:           		darken(spin(@warning-background, -10), 3%);
+
+@error-text:               		#b94a48;
+@error-background:         		#f2dede;
+@error-border:             		darken(spin(@error-background, -10), 3%);
+
+@success-text:             		#468847;
+@success-background:       		#dff0d8;
+@success-border:           		darken(spin(@success-background, -10), 5%);
+
+@info-text:                		#3a87ad;
+@info-background:          		#d9edf7;
+@info-border:              		darken(spin(@info-background, -10), 7%);

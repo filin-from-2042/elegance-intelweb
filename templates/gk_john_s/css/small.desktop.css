@@ -1,0 +1,43 @@
+/*
+#------------------------------------------------------------------------
+# John S. - March Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2014 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+#gkContentWrapper {
+	overflow: hidden;
+}
+.box.title-left .header {
+	left: 5%;
+}
+.box.title-right .header {
+	right: 5%;
+}
+.frontpage #gkMainbody .box,
+.frontpage #gkBottom1.gkSingleModule .box, 
+.frontpage #gkBottom2.gkSingleModule .box, 
+.frontpage #gkBottom3.gkSingleModule .box, 
+.frontpage #gkBottom4.gkSingleModule .box, 
+.frontpage #gkBottom5.gkSingleModule .box, 
+.frontpage #gkBottom6.gkSingleModule .box {
+	padding: 40px 0;
+}
+#static-aside-menu-toggler.active {
+	right: 7px;
+}
+.gk-header1 {
+	padding: 230px 5% 200px 5%;
+}
+.gk-header2 {
+	padding: 300px 4%;
+}
+#gkHeader #gkLogo {
+	left: 5%;
+}
+.frontpage-header3 #gkHeader #gkLogo {
+	left: 50%!important;
+}

@@ -1,0 +1,23 @@
+/**
+* @version   $Id: master-ie9.css 11798 2013-06-27 12:07:04Z arifin $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+.readon, .rt-block {filter: progid:DXImageTransform.Microsoft.gradient(enabled = false) !important;}
+
+body .menu-block .gf-menu.l1 li:hover {filter: none;}
+ul.menu li.active.current > a:before, ul.menu li.active.current > .item:before, ul.menu li.active.current > .separator:before,
+ul.menu #current.active > a:before, ul.menu #current.active > .item:before, ul.menu #current.active > .separator:before {font-size: 15px;}
+
+/* Box Suffixes */
+body [class*="box"] [class*="box"] {filter: none !important;}
+
+/* Gradient + Border Radius Fix */
+body .menu-block .gf-menu.l1 > li.active > .item, body .menu-block .gf-menu.l1 > li:hover > .item, body .menu-block .dropdown ul li .item {filter: none !important;}
+body .button, body .readon, body button.validate, body p.readmore a, body #member-profile a, body #member-registration a, body .formelm-buttons button, body .controls .btn, body .logout-button .btn, body #gantry-totop, body .sprocket-mosaic-header li, body .sprocket-readmore, body .sprocket-mosaic-loadmore, body .sprocket-lists-title .indicator, body .roksearch_results a.clr, body #k2Container .k2ReadMore, body #k2Container #submitCommentButton {filter: none !important;}
+body #rt-header .horizontal-login #modlgn-passwd, body #rt-header .horizontal-login #modlgn-username, body .rokajaxsearch .roksearch-wrapper {filter: none !important;}
+body .sprocket-features-pagination li, body .sprocket-lists-pagination li, body .sprocket-strips-pagination li, body .sprocket-lists .sprocket-lists-pagination li, body .sprocket-lists .sprocket-lists-arrows .arrow {filter: none !important;}
+body .sprocket-strips-container > li .sprocket-strips-item, body .sprocket-strips .sprocket-strips-pagination li, body .sprocket-strips .sprocket-strips-arrows .arrow {filter: none !important;}
+body .sprocket-tabs .sprocket-tabs-nav li {filter: none !important;}

@@ -1,0 +1,139 @@
+/*
+#------------------------------------------------------------------------
+# John S. - March Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2014 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+/* Style 4 */
+
+/* template.css */
+a,
+#gkMainMenu div.childcontent a:active,
+#gkMainMenu div.childcontent a:focus,
+#gkMainMenu div.childcontent a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover {
+	color: #e26698;
+}
+#gkFooter a:hover,
+#gkFooter a:focus,
+#gkFooter a:active,
+body.frontpage.dark_bg #gkFooter a:active,
+body.frontpage.dark_bg #gkFooter a:focus,
+body.frontpage.dark_bg #gkFooter a:hover { color: #e26698 }
+.box.dark a:active,
+.box.dark a:focus,
+.box.dark a:hover,
+.box.dark-bg a:active,
+.box.dark-bg a:focus,
+.box.dark-bg a:hover { color: #e26698!important; }
+.box.color,
+.box.color-bg {
+	background: #e26698;
+}
+.box.color-bg { background: url('../images/style4/color_pattern_bg.png') repeat 0 0; }
+.box.icon-color3 h3 i { color: #e26698; }
+
+/* joomla.css */
+button,
+.button,
+.readon,
+.button.inverse:active,
+.button.inverse:focus,
+.button.inverse:hover,
+input.button,
+span.button,
+button.button,
+div.button,
+.readmore a,
+input[type="submit"],
+input[type="button"] {
+	background: #e26698;
+}
+.tooltip-inner strong {
+	background: #e26698;
+}
+#system-message .alert {
+	background-color: #e26698;
+}
+.pagination ul li a:hover,
+.pager li a:hover {
+	border-color: #e26698;
+	color: #e26698;
+}
+dl#tabs dt.tabs.open a,
+dl.tabs dt.tabs.open a {
+	background: #e26698;
+}
+
+/* gk_stuff.css */
+.nspPagination li:hover,
+.nspPagination li.active { background-color: #e26698; }
+.nspNext:hover:after,
+.nspPrev:hover:after { color: #e26698; }
+.nspArt h4.nspHeader a:hover { color: #e26698; }
+.box.dark a.readon:hover {
+	border-color: #e26698;
+	color: #e26698;
+}
+.gkTabsWrap ol li.active,
+.gkTabsWrap ol li.active:hover,
+.gkTabsWrap ol li:hover {
+	background: #e26698;
+}
+.gkContactForm input[type="submit"]:active,
+.gkContactForm input[type="submit"]:focus,
+.gkContactForm input[type="submit"]:hover {
+	background: #e26698;
+}
+.gkCols + .button {
+	background: #e26698;
+}
+.gkTeamPrev:hover,
+.gkTeamNext:hover {
+	color: #e26698;
+}
+.gkTeamOverlay {
+	background: #e26698;
+}
+
+/* menu.css */
+#close-menu {
+	color: #e26698;
+}
+#aside-menu li a.active,
+#aside-menu li a:active,
+#aside-menu li a:focus,
+#aside-menu li a:hover {
+	color: #e26698;
+}
+
+/* k2.css */
+.activeCategory a { color: #e26698 }
+.itemList .itemBody > ul li a:active,
+.itemList .itemBody > ul li a:focus,
+.itemList .itemBody > ul li a:hover { color: #e26698; }
+.k2LatestCommentsBlock div p a:hover { color: #e26698 }
+.k2CalendarBlock table.calendar tr td.calendarDateLinked a:hover {
+	background: #e26698;
+}
+.k2CalendarBlock table.calendar tr td.calendarToday {
+	background: #e26698;
+}
+table.calendar tr td.calendarTodayLinked a {
+	color: #e26698;
+}
+.k2CalendarBlock table.calendar tr td.calendarTodayLinked a:hover {
+	background: #e26698;
+}
+.calendarNavLink { color: #e26698; }
+.k2TagCloudBlock a:hover,
+div.tags.tagcloud a:hover,
+.btn.jmodedit > span.icon-edit {
+	background: #e26698;
+}

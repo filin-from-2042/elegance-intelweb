@@ -1,0 +1,105 @@
+/**
+ * @version   $Id: rtl.less 10853 2013-05-29 21:56:38Z arifin $
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2013 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+
+body.rtl {
+
+	// Gantry Core
+	.gantry-width-block {
+		float: right;
+	}
+
+	// Menu
+	ul.menu li a:before, ul.menu li .item:before, ul.menu li .separator:before {
+		float: right;
+		margin-left: 10px;
+	}
+	.gf-menu .item.icon [class^="icon-"]:before, .gf-menu .item.icon [class*=" icon-"]:before {
+		margin-left: 5px;
+	}
+
+	// Modules
+	[class^="icon-"] .module-title .title-icon, [class*=" icon-"] .module-title .title-icon {
+		margin-right: 0;
+		margin-left: 10px;
+	}
+
+	// RokAjaxSearch
+	.rokajaxsearch {
+		.inputbox {
+			background-position: 4% -65px;
+		}
+		.search_options label {
+			float: right !important;
+			margin-left: 10px !important;
+			input {
+				float: left;
+				margin: 4px !important;
+			}
+		}
+	}
+	#roksearch_results {
+		text-align: right;
+		.page, .roksearch_row_btm {
+			float: right;
+		}		
+		#roksearch_link {
+			margin-left: 10px;
+			margin-top: 17px;
+		}
+	}
+
+	// Featured Article
+	.rt-published-date {
+	    left: 0;
+	    right: inherit !important;
+	}
+
+	// Sprocket - Strips
+	.fp-roksprocket-strips-showcase .sprocket-strips-container > li .sprocket-strips-item .sprocket-strips-content .readon {
+	    left: 15px;
+	    right: inherit !important;
+	}
+
+	// Sprocket - Tabs
+	.sprocket-tabs-nav {
+		li {
+			float: right;
+			margin-right: 0;
+			margin-left: 5px;
+		}
+	}
+
+	// Sprocket - Lists
+	.sprocket-lists-title {
+		&.padding {
+			padding-left: inherit;
+			padding-right: 50px;
+		}
+		.indicator {
+			left: inherit;
+			right: 15px;
+		}
+	}
+	.sprocket-lists-image {
+		float: right;
+		margin: 10px 0 10px 15px;
+	}
+
+	// PopUp Login
+	.rt-popuplogin {
+		[class^="icon-"], [class*=" icon-"] {
+		    float: right;
+		    margin-right: 0 !important;
+		    padding-top: 2px;			
+		}
+	}
+
+	// ToTop
+	#gantry-totop {
+		float: left;
+	}
+}

@@ -1,0 +1,1089 @@
+/**
+ * @version   $Id: style.less 9168 2013-04-06 21:12:48Z kevin $
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2013 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+
+// Core
+body {
+	&.background-overlay-light {
+		color: @body-text;
+	}	
+	&.background-overlay-dark {
+		color: lighten(@body-text, 50%);
+	}
+}
+a {
+	color: @main-accent;
+	-webkit-tap-highlight-color: fadeout(@main-accent, 50%);
+}
+a:hover {
+	color: @body-text;
+	.background-overlay-dark & {
+		color: @white;
+	}
+	.background-overlay-dark.main-body-light & {
+		color: @body-text;
+	}	
+}
+h1, h2, h3, h4, h5, h6 {
+	color: @body-title;
+}
+.background-overlay-dark .title {
+	color: lighten(@body-text, 50%);
+}
+
+// Body Backgrounds
+body, #rt-popuplogin {
+	background: url(../images/patterns/@{background-type}.png) repeat scroll 0 0 @background-color;
+}
+
+// Header
+#rt-header {
+	background-color: @header-background;
+}
+
+// Logo
+.logoStyle (@index) when (@index > 0) {
+	(~".logo-type-preset@{index}") {
+		#rt-logo {
+			background: url(../images/logo/preset@{index}/logo.png) 0 0 no-repeat;
+		}
+	}
+	.logoStyle (@index - 1);
+}
+.logoStyle (8);
+
+// Navigation
+.menu-block {
+	.gf-menu.l1 > li {
+		.item {
+			color: @menu-text-color;
+			background-color: @header-background;
+			border-top: 1px solid lighten(@header-background, 5%);
+			border-left: 1px solid lighten(@header-background, 5%);
+			border-bottom: 1px solid lighten(@header-background, 5%);
+			border-right: 1px solid darken(@header-background, 10%);
+		}
+		&.active, &:hover {
+			> .item {
+				#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+				border: 1px solid darken(@main-accent, 8%);
+				.box-shadow(~"0 0 5px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.3) inset");
+			}
+		}
+	}
+	.dropdown ul li {
+		.item {
+			#gradient > .vertical(lighten(@header-background, 5%), darken(@header-background, 5%));
+			border: 1px solid lighten(@header-background, 3%);
+			&:hover {
+				#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+				border: 1px solid darken(@main-accent, 5%);
+				.box-shadow(~"0 0 3px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset");
+			}			
+		}
+		&.active, &:hover{
+			> .item {
+				#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+				border: 1px solid darken(@main-accent, 5%);
+				.box-shadow(~"0 0 3px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset");		
+			}
+		}	
+		&.modules {
+			#gradient > .vertical(lighten(@header-background, 5%), darken(@header-background, 5%));
+			border: 1px solid lighten(@header-background, 3%);		
+			.title {
+				color: @menu-text-color;
+			}
+			a {
+				color: lighten(@header-background, 35%);
+				text-shadow: none;
+				&:hover {
+					color: lighten(@header-background, 25%);
+				}
+			}		
+		}
+	}
+}
+.gf-menu-toggle {
+	color: @body-contrast;
+	text-shadow: @body-text-shadow;		
+	#gradient > .vertical(@body-title, darken(@body-title, 15%));
+	border: 1px solid darken(@body-title, 20%);
+	&.active, &:hover, &:focus {
+		color: @white;
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+		#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+		border: 1px solid darken(@main-accent, 8%);			
+	}
+}
+.gf-menu-device-container {
+	.gf-menu {
+		&.l1 > li > .item, &.l1 > li:hover > .item {
+			border: 1px solid transparent;
+			background: none;
+			.box-shadow(none);
+		}
+		.dropdown ul li {
+			.item, .modules {
+				background: none;
+				border: 0;
+				.box-shadow(none);
+			}
+			&:hover > .item {
+				color: @main-accent;
+			}			
+		}				
+		li.active.last > .item, li.active:hover > .item, li.active.last:hover > .item {
+			color: @white;
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+			#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+			border: 1px solid darken(@main-accent, 8%) !important;		
+			.box-shadow(~"0 0 5px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.3) inset");
+		}
+		> li:first-child, > li.active:first-child, > li:last-child, li ol > li:last-child, li .columns-1 > .col1 > ul > li:last-child, li .columns-2 > .col2 > ul > li:last-child, li .columns-3 > .col3 > ul > li:last-child, li .columns-4 > .col4 > ul > li:last-child {
+			background-color: @header-background !important;
+		}
+		> li:hover > .item {
+			color: @main-accent;
+		}			
+	}
+}
+
+// MainBody
+#rt-mainbody {
+	color: @body-text;
+	background: @body-contrast;
+	border: 1px solid darken(@body-contrast, 10%);	
+}
+
+// Footer 
+#rt-copyright {
+	.rt-copyright-text, .horizmenu {
+		a {
+			color: @body-title;
+			&:hover {
+				color: @main-accent;
+				.background-overlay-dark & {
+					color: @main-accent;
+				}			
+			}
+			.background-overlay-dark & {
+				color: lighten(@body-title, 50%);
+			}		
+		}
+	}
+}
+
+// Buttons
+.button, .readon, button.validate, p.readmore a, #member-profile a, #member-registration a, .formelm-buttons button, .controls .btn, .logout-button .btn, #gantry-totop, .pagenav a,
+.sprocket-mosaic-header li, .sprocket-readmore, .sprocket-mosaic-loadmore, .sprocket-lists-title .indicator, &.roksearch_results a.clr,
+#k2Container .k2ReadMore, #k2Container #submitCommentButton {
+	color: @white !important;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1) !important;
+	#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+	border: 1px solid darken(@main-accent, 8%);
+	.box-shadow(0 0 2px 1px rgba(0, 0, 0, 0.05) inset);
+	&.active, &:hover, &:focus {
+		#gradient > .vertical(darken(@main-accent, 5%), lighten(@main-accent, 5%));
+	}	
+}
+
+// RokSprockets Features
+.layout-showcase, .layout-slideshow {
+	.background-overlay-dark & {
+		.sprocket-features-title {
+			color: @body-contrast;
+			a {
+				color: @main-accent;
+				&:hover {
+					color: @white;
+				}
+			}
+		}
+	}
+	.sprocket-features-arrows .arrow, .sprocket-features-pagination li {
+		color: @body-contrast;
+		text-shadow: @body-text-shadow;		
+		#gradient > .vertical(@body-title, darken(@body-title, 15%));
+		border: 1px solid darken(@body-title, 20%);
+		&.active {
+			#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+			border: 1px solid darken(@main-accent, 8%);
+		}
+	}
+	.readon {
+		font-size: 18px;
+		padding: 10px 20px;
+	}
+}
+.layout-slideshow {
+	.sprocket-features-content {
+		color: @light-grey;
+		#gradient > .vertical(fadeout(@black, 35%), fadeout(darken(@black, 15%), 35%));
+		border: 1px solid darken(@black, 8%);
+		.sprocket-features-title {
+			color: @white;
+		}
+	}
+}
+
+.sprocket-mosaic {
+	.sprocket-mosaic-header li {
+		color: @body-contrast;
+		text-shadow: @body-text-shadow;		
+		#gradient > .vertical(@body-title, darken(@body-title, 15%));
+		border: 1px solid darken(@body-title, 20%);
+		&.active, &:hover, &:focus {
+			color: @white;
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+			#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+			border: 1px solid darken(@main-accent, 8%);			
+		}
+	}
+	.sprocket-mosaic-item {
+		background: darken(@background-color, 5%);
+		border: 1px solid darken(@background-color, 10%);
+	}
+	.sprocket-mosaic-tags li {
+		color: @white;
+		text-shadow: @body-text-shadow;	
+		#gradient > .vertical(@body-title, darken(@body-title, 10%));
+		border: 1px solid darken(@body-title, 15%);
+	}
+}
+
+.sprocket-tabs {
+	color: @body-text;
+	border: 1px solid darken(@background-color, 10%);	
+	.sprocket-tabs-panels {
+		background: @body-contrast;
+		.background-overlay-dark.main-body-dark & {
+			background: lighten(@body-contrast, 5%);
+		}		
+	}
+	.background-overlay-dark.main-body-dark & {
+		background: transparent;
+		border: 1px solid lighten(@body-contrast, 10%);
+	}	
+	.background-overlay-dark.main-body-light & {
+		background: transparent;
+		border: 1px solid lighten(@background-color, 10%);
+	}			
+	.sprocket-tabs-nav {
+		background: lighten(@header-background, 20%);	
+		.background-overlay-dark & {
+			background: darken(@background-color, 1%);
+		}	
+		.background-overlay-dark.main-body-light & {
+			background: lighten(@background-color, 5%);
+		}		
+		li {
+			background: lighten(@header-background, 20%);
+			border: 1px solid lighten(@header-background, 10%);
+			.sprocket-tabs-inner {
+				color: @body-contrast;
+				.background-overlay-dark & {
+					color: lighten(@body-contrast, 45%);
+				}				
+			}		
+			.background-overlay-dark & {
+				background: lighten(@body-contrast, 2%);
+				border: 1px solid lighten(@body-contrast, 10%);
+				color: lighten(@body-contrast, 15%);
+			}
+			.background-overlay-dark.main-body-light & {
+				background: lighten(@background-color, 10%);
+				border: 1px solid lighten(@background-color, 15%);
+			}								
+			&:hover {
+				#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+				border: 1px solid darken(@main-accent, 8%);
+				.box-shadow(~"0 0 5px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.3) inset");			
+				.sprocket-tabs-inner {
+					color: @white;
+					opacity: 1;
+				}		
+				.background-overlay-dark.main-body-light & {
+					#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+					border: 1px solid darken(@main-accent, 8%);
+					.box-shadow(~"0 0 5px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1) inset");	
+				}							
+			}
+			&.active, &:focus, &.active:hover {
+				color: @body-text;
+				background: @body-contrast;
+				border-left: 1px solid transparent;
+				border-right: 1px solid transparent;	
+				border-bottom: 1px solid transparent;
+				border-top: 1px solid darken(@background-color, 10%);
+				.box-shadow(none);
+				.sprocket-tabs-inner {
+					color: @body-text;
+				}		
+				.background-overlay-dark & {
+					background: lighten(@body-contrast, 5%);
+					border-top: 1px solid lighten(@body-contrast, 10%);
+					.box-shadow(none);
+				}	
+				.background-overlay-dark.main-body-light & {
+					background: @body-contrast;
+					border-left: 1px solid transparent;
+					border-right: 1px solid transparent;	
+					border-bottom: 1px solid transparent;
+					border-top: 1px solid transparent;
+				}								
+			}			
+		}
+	}
+	&.layout-left, &.layout-right {
+		.sprocket-tabs-nav li {
+			&.active, &:focus, &.active:hover {
+				border: 1px solid darken(@body-contrast, 10%) !important;		
+			}			
+		}
+	}
+	&.layout-bottom {
+		.sprocket-tabs-nav li {
+			&.active, &:focus, &.active:hover {
+				border: 1px solid transparent;	
+				border-bottom: 1px solid darken(@body-contrast, 10%);		
+			}			
+		}		
+	}
+}
+
+.sprocket-lists {
+	background: @body-contrast;
+	border: 1px solid darken(@body-contrast, 10%);	
+	.background-overlay-dark & {
+		border: 1px solid lighten(@body-contrast, 2%);
+	}	
+	.background-overlay-dark.main-body-light & {
+		border: 1px solid lighten(@body-contrast, 10%);
+	}			
+	.sprocket-lists-container li {
+		border-bottom: 1px solid darken(@body-contrast, 10%);
+		.background-overlay-dark & {
+			border-bottom: 1px solid lighten(@body-contrast, 2%);
+		}
+		.background-overlay-dark.main-body-light & {
+			border-bottom: 1px solid darken(@body-contrast, 10%);
+		}				
+		.sprocket-lists-title .indicator {
+			background: @body-background4;
+			.background-overlay-dark & {
+				background: lighten(@body-background4, 10%);
+			}
+			.background-overlay-dark.main-body-light & {
+				background: @body-background4;
+			}						
+		}	
+		&.active, &.active:hover {
+			background: lighten(@body-background4, 10%);
+			.background-overlay-dark & {
+				background: lighten(@body-background4, 5%);
+			}
+			.background-overlay-dark.main-body-light & {
+				background: lighten(@body-background4, 10%);
+			}							
+			.sprocket-lists-title .indicator {
+				background: @main-accent;
+			}			
+			.sprocket-lists-title:after {
+				background: @body-contrast;
+				border-left: 1px solid darken(@body-contrast, 10%);					
+				border-bottom: 1px solid darken(@body-contrast, 10%);	
+				.background-overlay-dark & {
+					border-left: 1px solid lighten(@body-contrast, 2%);					
+					border-bottom: 1px solid lighten(@body-contrast, 2%);						
+				}
+				.background-overlay-dark.main-body-light & {
+					background: darken(@body-contrast, 20%);
+					border-left: 1px solid darken(@body-contrast, 10%);					
+					border-bottom: 1px solid darken(@body-contrast, 10%);						
+				}								
+			}
+		}	
+		&:hover {
+			background: lighten(@main-accent, 50%);
+			.sprocket-lists-title {
+				color: @main-accent;
+				.indicator {
+					background: @main-accent;
+				}					
+			}
+		}
+		.readon-wrapper .readon {
+			background: none;
+			border: none;
+			.box-shadow(none);
+			text-shadow: none !important;
+			padding: 0;
+			color: @main-accent !important;
+			text-decoration: underline;
+			&:hover {
+				color: @main-accent2 !important;
+			}
+		}
+	}
+	.sprocket-lists-pagination li, .sprocket-lists-arrows .arrow {
+		color: @body-contrast;
+		text-shadow: @body-text-shadow;			
+		#gradient > .vertical(@body-title, darken(@body-title, 15%));
+		&.active {
+			#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+		}
+	}
+
+}
+
+.sprocket-headlines {
+	.sprocket-headlines-navigation .arrow {
+		color: @body-contrast;
+		text-shadow: @body-text-shadow;		
+		#gradient > .vertical(@body-title, darken(@body-title, 15%));
+		border: 1px solid darken(@body-title, 20%);		
+	}
+}
+
+.sprocket-strips {
+	.sprocket-strips-item {
+		background: @body-contrast;
+		border: 1px solid darken(@body-contrast, 10%);
+	}	
+	.sprocket-strips-arrows .arrow {
+		color: @body-contrast;
+		text-shadow: @body-text-shadow;		
+		#gradient > .vertical(@body-title, darken(@body-title, 15%));
+		border: 1px solid darken(@body-title, 20%);	
+	}
+	.sprocket-strips-pagination li, .sprocket-strips-arrows .arrow {
+		color: @body-contrast;
+		text-shadow: @body-text-shadow;			
+		#gradient > .vertical(@body-title, darken(@body-title, 15%));
+		&.active {
+			#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+		}
+		.background-overlay-dark & {
+			#gradient > .vertical(lighten(@body-title, 25%), lighten(@body-title, 15%));
+			&.active {
+				#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+			}			
+		}		
+	}	
+}
+
+// RokAjaxSearch
+.rokajaxsearch {
+	.roksearch-wrapper {
+		background: @body-contrast;
+		border: 1px solid darken(@main-accent, 5%);
+	}
+	.inputbox {
+		background: url(../images/main/search-controls.png);	
+	}
+}
+#roksearch_results {
+	background: darken(@background-color, 5%);
+	.roksearch_wrapper1 {
+		border: 1px solid darken(@background-color, 5%);
+		.roksearch_header, .roksearch_result_wrapper1 {
+			border: none;
+		}
+		.roksearch_row_btm {
+			border-top: darken(@background-color, 10%);
+		}
+	}
+	.arrow-right {
+		background: url(../images/main/search-controls.png) 0 -15px no-repeat;
+	}
+	.arrow-left-disabled, .arrow-right-disabled {
+		background: url(../images/main/search-controls.png) 0 -33px no-repeat;
+	}
+	.arrow-left {
+		background: url(../images/main/search-controls.png) 0 2px no-repeat;
+	}
+	.container-wrapper .roksearch_result_wrapper1 {
+		#gradient > .vertical-three-colors(@background-color, lighten(@background-color 2%), 45%, lighten(@background-color, 10%));
+	}
+	.roksearch_result_wrapper1:hover {
+		background-color: darken(@background-color, 11%);
+		#gradient > .vertical-three-colors(lighten(@main-accent, 10%), @main-accent, 45%, darken(@main-accent, 8%));
+		color: @white;
+		border-color: darken(@main-accent, 3%);
+		text-shadow: -1px -1px 1px rgba(0,0,0,0.3);
+		h3 {
+			color: @white;
+			text-shadow: -1px -1px 1px rgba(0,0,0,0.3);
+		}
+		span.highlight {
+			color: @white;
+			background-color: darken(@main-accent, 40%);
+		}
+	}
+	#roksearch_link {
+		background: url(../images/main/search-controls.png) 0 -50px no-repeat;
+	}
+	span.highlight {
+		color: @white;
+		background-color: @main-accent2;
+		text-shadow: none;
+	}
+	.background-overlay-dark & {
+		a, h3 {
+			color: @light-grey;
+		}		
+	}	
+}
+
+// Typography
+.pagenav {
+	li {
+		background: @body-background2;
+		border: 1px solid @body-border;
+		box-shadow: inset 0 0 0 1px @white, 0 1px 2px rgba(0,0,0,0.2);
+	}
+}
+.login-fields #username, .login-fields #password, #contact-form dd input, #contact-form dd textarea, #modlgn-username, #modlgn-passwd, #jform_email, #member-registration dd input, #search-searchword, .finder .inputbox, .inputbox {
+	border: 1px solid #d9d9d9;
+}
+.component-content {
+	.contact {
+		.title {
+			#gradient > .vertical(@body-contrast, @body-border2);
+			border: 1px solid @body-border;
+			text-shadow: 0 1px 1px rgba(255,255,255,.75);
+		}
+	}
+}
+.pagination {
+	ul {
+		li {
+			a {
+				#gradient > .vertical(@body-contrast, @body-border2);
+				border: 1px solid @body-border;
+				text-shadow: 0 1px 1px rgba(255,255,255,.75);
+			}
+			span {
+				background: @body-background4;
+				border: 1px solid @body-border;
+				color: @body-text-light;
+			}
+		}
+	}
+}
+.breadcrumbs, .breadcrumb {
+	a {
+		&:after {
+			color: @body-text-light;
+		}
+	}
+	.showHere {
+		font-weight: bold;
+		margin-right: 5px;
+	}
+}
+.article-info {
+	&.muted {
+		color: inherit;
+	}
+	dd:before {
+		text-shadow: 1px 1px 0 @body-contrast;
+	}
+}
+
+// Module and Title Variations
+.box1 {
+	color: @white;
+	background: @main-accent;
+	border: 1px solid darken(@main-accent, 10%);
+	a {
+		color: darken(@main-accent, 35%);
+		&:hover {
+			color: darken(@main-accent, 25%);
+			.background-overlay-dark & {
+				color: lighten(@main-accent, 35%);
+			}			
+		}
+		.background-overlay-dark & {
+			color: lighten(@main-accent, 25%);
+		}
+	}
+	&.rt-gradient {
+		#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+	}
+}
+
+.box2 {
+	color: @white;
+	background: @main-accent2;
+	border: 1px solid darken(@main-accent2, 10%);
+	a {
+		color: lighten(@main-accent2, 20%);
+		&:hover {
+			color: lighten(@main-accent2, 25%);
+		}
+	}
+	&.rt-gradient {
+		#gradient > .vertical(lighten(@main-accent2, 5%), darken(@main-accent2, 5%));
+	}	
+}
+
+.box3 {
+	color: @white;
+	background: #01A860;
+	border: 1px solid darken(#01A860, 10%);
+	a {
+		color: darken(#01A860, 35%);
+		&:hover {
+			color: darken(#01A860, 25%);
+		}
+	}
+	&.rt-gradient {
+		#gradient > .vertical(lighten(#01A860, 5%), darken(#01A860, 5%));
+	}	
+}	
+
+.box4 {
+	color: @white;
+	background: #11C1AC;
+	border: 1px solid darken(#11C1AC, 10%);
+	a {
+		color: darken(#11C1AC, 35%);
+		&:hover {
+			color: darken(#11C1AC, 25%);
+		}
+	}
+	&.rt-gradient {
+		#gradient > .vertical(lighten(#11C1AC, 5%), darken(#11C1AC, 5%));
+	}	
+}
+
+.box5 {
+	color: @white;
+	background: lighten(@header-background, 15%);
+	border: 1px solid @header-background;
+	.title, h1, h2, h3, h4, h5, h6 {
+		color: darken(@white, 35%);
+	}		
+	a {
+		color: lighten(@main-accent, 10%);
+		&:hover {
+			color: @main-accent;
+		}
+	}
+	&.rt-gradient {
+		#gradient > .vertical(lighten(@header-background, 35%), darken(@header-background, 20%));
+	}		
+	.background-overlay-dark & {
+		background: lighten(@header-background, 5%);
+		border: 1px solid @header-background;
+	}	
+}	
+
+.box6 {
+	color: @body-text;
+	background: @body-contrast;
+	border: 1px solid darken(@body-contrast, 10%);
+	.title, h1, h2, h3, h4, h5, h6 {
+		color: darken(@body-text, 10%);
+	}		
+	a {
+		color: @main-accent;
+		&:hover {
+			color: @main-accent2;
+		}
+	}
+	&.rt-gradient {
+		#gradient > .vertical(lighten(@body-contrast, 5%), darken(@body-contrast, 5%));
+	}	
+	.background-overlay-dark & {
+		background: lighten(@body-contrast, 5%);
+		border: 1px solid lighten(@body-contrast, 8%);
+		a {
+			color: lighten(@main-accent, 10%);
+			&:hover {
+				color: lighten(@main-accent2, 10%);
+			}
+		}		
+	}
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+	.title, h1, h2, h3, h4, h5, h6 {
+		color: @white;
+	}
+}
+
+[class*="box"] [class*="custom"].[class*="box"] {
+	background: none !important;
+	.box-shadow(none) !important;
+	border: 0 !important;
+}
+
+
+.title1 {
+	.module-title {
+		#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+		border: 1px solid darken(@main-accent, 10%);
+		.title {
+			color: @white;
+		}
+	}
+}
+
+.title2 {
+	.module-title {
+		#gradient > .vertical(lighten(@main-accent2, 5%), darken(@main-accent2, 5%));
+		border: 1px solid darken(@main-accent2, 10%);
+		.title {
+			color: @white;
+		}
+	}
+}
+
+.title3 {
+	.title {
+		&:before {
+			#gradient > .vertical(lighten(@main-accent, 5%), darken(@main-accent, 5%));
+			border: 1px solid darken(@main-accent, 5%);
+		}
+		&:after {
+			color: @white;
+		}
+	}
+}
+
+.title4 {
+	.title {
+		&:before {
+			#gradient > .vertical(lighten(@main-accent2, 5%), darken(@main-accent2, 5%));
+			border: 1px solid darken(@main-accent2, 5%);
+		}
+		&:after {
+			color: @white;
+		}
+	}
+}
+
+.rt-shadow {
+	&.rt-block {	
+		.box-shadow(@body-box-shadow) !important;
+	}	
+}
+
+.rt-bevel {
+	&.rt-block {	
+		.box-shadow(@body-box-shadow inset) !important;
+		&.box1, &.box3, &.box4, &.box6 {
+			.box-shadow(0 0 5px rgba(0, 0, 0, 0.3) inset) !important;
+		}			
+	}
+}
+
+// Menu Module
+ul.menu {
+	li {
+		.horizmenu & {
+			border-right: 1px solid fadeout(@body-text, 70%);
+			border-left: 1px solid rgba(255, 255, 255, 0.5);
+		}
+	}
+}
+
+// Extras
+.tip-wrap {
+	background: @body-contrast;
+	.box-shadow(0 0 5px rgba(0,0,0,0.3));
+	color: @body-text;
+}
+.system-unpublished .system-unpublished {
+	background: @body-contrast;
+	border-color: @body-border;
+}
+
+// Features
+.rt-social-buttons {
+	.social-button {
+		color: @white;
+		background: rgba(0, 0, 0, 0.1);
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+		.box-shadow(0 0 2px rgba(0, 0, 0, 0.1) inset);
+		&:hover {
+			color: @white;
+		}
+		&.rt-social-button-1:hover {
+			background: #3B5998;
+		}	
+		&.rt-social-button-2:hover {
+			background: #00CAFB;
+		}
+		&.rt-social-button-3:hover {
+			background: #FF6600;
+		}
+		&.rt-social-button-4:hover {
+			background: #D23A1D;
+		}	
+		&.rt-social-button-5:hover {
+			background: @main-accent;
+		}
+		&.rt-social-button-6:hover {
+			background: @main-accent;
+		}				
+	}
+}
+
+
+// Typography
+
+// Abbreviations and acronyms
+abbr[title] {
+  border-bottom: 1px dotted @body-border;
+}
+
+// Blockquotes
+blockquote {
+  border-left: 5px solid @body-border;
+  small {
+    color: @body-text-light;
+  }
+
+  &.pull-right {
+    border-right: 5px solid @body-border;
+  }
+}
+
+// Forms
+legend {
+  color: @body-title;
+  border-bottom: 1px solid @body-border;
+
+  small {
+    color: @body-border;
+  }
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  color: @body-text;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  background-color: @body-contrast;
+  border: 1px solid @body-border;
+  .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+}
+
+select {
+  border: 1px solid @body-border;
+}
+
+// Uneditable inputs
+.uneditable-input,
+.uneditable-textarea {
+  color: @body-text-light;
+  background-color: @body-background;
+  border-color: @body-border;
+  .box-shadow(inset 0 1px 2px rgba(0,0,0,.025));
+}
+
+// Inputs
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  border-color: @body-border;
+}
+
+.input-prepend,
+.input-append {
+  .add-on {
+    text-shadow: 0 1px 0 @body-contrast;
+    background-color: @body-background2;
+    border: 1px solid @body-border;
+  }
+  &.input-append .media-preview {
+  	margin: 0;
+  }
+}
+
+// Form Actions
+.form-actions {
+  background-color: @body-background2;
+  border-top: 1px solid @body-border;
+}
+
+.uneditable-input {
+  background-color: @inputBackground;
+  border-color: #eeeeee;
+  .box-shadow(inset 0 1px 2px rgba(0,0,0,.025));
+}
+
+// Help Text
+.help-block,
+.help-inline {
+  color: @gray;
+}
+
+// Extras
+.table-bordered th {
+	background-color: @body-background2;
+}
+.well {
+	background-color: transparent;
+	border: none;
+	.box-shadow(none);
+}
+
+.nav-tabs.nav-stacked > li > a {
+	background-color: @body-background2;
+	&:hover {
+		background-color: @body-background4;
+	}
+}
+
+.list-striped li:nth-child(odd),
+.list-striped dd:nth-child(odd),
+.row-striped .row:nth-child(odd),
+.row-striped .row-fluid:nth-child(odd),
+.cat-list-row0 {
+	background-color: @body-background4;
+}
+
+.list-striped li:hover,
+.list-striped dd:hover,
+.row-striped .row:hover,
+.row-striped .row-fluid:hover,
+.cat-list-row0:hover, .cat-list-row1:hover {
+	background-color: @body-background3;
+}
+
+.filter-search.alert-info {
+	background-color: transparent;
+	border-color: transparent;
+	color: inherit;
+	.inputbox {
+		color: @bodyTextDark;
+	}
+}
+
+.background-overlay-dark.main-body-dark {
+	.table-striped tbody tr:nth-child(2n+1) td, .table-striped tbody tr:nth-child(2n+1) th {
+		background: #222222;
+	}
+}	
+
+// Notice Styles
+p, tr {
+	&.success, &.info, &.error, &.warning {
+		.border-radius(6px);
+		padding: 15px;
+		font-weight: bold;
+		border: 1px solid;
+		a {
+			color: #666 !important;
+			&:hover {
+				color: #000 !important;
+				text-shadow: none;
+			}
+		}			
+	}
+	&.success {
+		background: @success-background;
+		border-color: @success-border;
+		color: @success-text;
+		text-shadow: none;
+	}
+	&.info {
+		background: @info-background;
+		border-color: @info-border;
+		color: @info-text;
+		text-shadow: none;
+	}
+	&.error {
+		background: @error-background;
+		border-color: @error-border;
+		color: @error-text;
+		text-shadow: none;
+	}
+	&.warning {
+		background: @warning-background;
+		border-color: @warning-border;
+		color: @warning-text;
+		text-shadow: none;
+	}
+}
+
+#system-message {
+	dd {
+		ul {
+			text-shadow: 1px 1px 0 rgba(255,255,255,0.4);
+			.sys-msg();
+		}
+	}
+	.error {
+		ul {
+			.sys-msg(error);
+		}
+	}
+
+	.notice {
+		ul {
+			.sys-msg(notice);
+		}
+	}
+	.alert {
+		.sys-msg();
+		&-error {
+			.sys-msg(error);
+		}
+		&-warning {
+			.sys-msg(notice);
+		}
+		&-success {
+			.sys-msg(success);
+		}
+	}
+}
+
+// Component Body
+body.component-body {
+	background-image: none;
+	background-color: @white;
+	color: @grey;
+}

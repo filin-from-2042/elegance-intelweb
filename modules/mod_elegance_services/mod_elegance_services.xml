@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+<name>elegance_services</name>
+<creationDate>November 2014</creationDate>
+<author>filin_from_2042</author>
+<copyright>Copyright Info</copyright>
+<license>Because fuck you!</license>
+<version>1.0</version>
+<description>Информация в блоке Service в шаблоне 'Elegance'</description>
+<files>
+    <filename module="mod_elegance_services">mod_elegance_services.php</filename>
+    <filename>mod_elegance_services.xml</filename>
+</files>
+<config>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="header" type="text" default="Services" label="Заголовок" description="Текстовая заголовка блока" />
+            <field name="sub_header" type="text" default="Sub-header" label="Подзаголовок" description="Текстовая подзаголовка" />
+            <field name="text" type="editor" default="Text" label="Текст блока" description="Текстовая информация блока, выводимая на сайте" />
+
+            <field name="first_image" type="media" default="Text" label="Первое изображение" directory="elegance"/>
+            <field name="first_image_text" type="text" default="Text" label="Подпись первого изображения" />
+
+            <field name="second_image" type="media" default="Text" label="Второе изображение" directory="elegance"/>
+            <field name="second_image_text" type="text" default="Text" label="Подпись второго изображения"/>
+
+            <field name="third_image" type="media" default="Text" label="Третье изображение" directory="elegance"/>
+            <field name="third_image_text" type="text" default="Text" label="Подпись третьего изображения" />
+
+            <field name="fourth_image" type="media" default="Text" label="Четвертое изображение" directory="elegance"/>
+            <field name="fourth_image_text" type="text" default="Text" label="Подпись четвертого изображения" />
+
+        </fieldset>
+        <fieldset name="advanced">
+            <field name="layout" type="modulelayout"
+                   label="JFIELD_ALT_LAYOUT_LABEL"
+                   description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+        </fieldset>
+    </fields>
+</config>
+
+</extension>
+

@@ -1,0 +1,455 @@
+/**
+* @version   $Id: mediaqueries.less 9163 2013-04-06 18:29:31Z kevin $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2013 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+// Large Mode
+@media only screen and (min-width: 1200px) {
+	.visible-large {
+		display: inherit !important;
+	}
+	.hidden-large {
+		display: none !important;
+	}
+	.visible-desktop {
+		display: inherit !important;
+	}
+	.hidden-desktop {
+		display: none !important;
+	}
+	body {
+		// Heading and Title
+		h1 {
+			font-size: 265%;
+		}
+		h2, .title, .component-content h2 {
+			font-size: 215%;
+		}
+		h3 {
+			font-size: 190%;
+		}
+		h4 {
+			font-size: 145%;
+		}
+		h5 {
+			font-size: 125%;
+		}	
+
+		// Social Buttons
+		.rt-social-buttons {
+			margin-bottom: 1px;
+		}			
+	}	
+}
+
+// Desktop Modes
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	.visible-large {
+		display: none !important;
+	}
+	.hidden-large {
+		display: inherit !important;
+	}
+	.visible-desktop {
+		display: inherit !important;
+	}
+	.hidden-desktop {
+		display: none !important;
+	}	
+
+	body {
+		// Adjust the following image height to match your actual RokSprocket Strips content
+		.fp-roksprocket-strips-showcase .sprocket-strips-content {
+			height: 144px;
+			font-size: 1.3em !important;
+		}
+
+		// RokSprocket Tabs
+		.fp-roksprocket-tabs {
+			.sprocket-tabs .readon {
+				margin: 0 0 0 128px;
+			}			
+		}		
+
+		// Sidebar
+		.fp-sidebar-img img {
+			height: 73px;
+		}
+
+		// Social Buttons
+		.rt-social-buttons {
+			margin-bottom: 31px;
+		}
+	}
+}
+
+// Tablet Modes
+@media (min-width: 768px) and (max-width: 959px) {
+	.visible-tablet {
+		display: inherit !important;
+	}
+	.hidden-tablet {
+		display: none !important;
+	}
+	.hidden-desktop {
+		display: inherit !important;
+	}
+	.visible-desktop {
+		display: none !important;
+	}
+	.visible-large {
+		display: none !important;
+	}
+	.hidden-large {
+		display: inherit !important;
+	}	
+
+	body {
+		// Heading and Title
+		h1 {
+			font-size: 225%;
+		}
+		h2, .title, .component-content h2 {
+			font-size: 175%;
+		}
+		h3 {
+			font-size: 150%;
+		}
+		h4 {
+			font-size: 105%;
+		}
+		h5 {
+			font-size: 100%;
+		}	
+
+		// Adjust the following image height to match your actual RokSprocket Strips content
+		.fp-roksprocket-strips-showcase .sprocket-strips-content {
+			height: 107px;
+			font-size: 1.2em !important;
+		}		
+
+		// RokSprocket Tabs
+		.fp-roksprocket-tabs {
+			.sprocket-tabs .readon {
+				margin: 0 0 0 103px;
+			}			
+		}			
+
+		// Featured Article
+		.img-intro-left {
+			width: 220px !important;
+		}
+
+		// Sidebar
+		.fp-sidebar-img img {
+			height: 63px;
+		}	
+
+		// Social Buttons
+		.rt-social-buttons {
+			margin-bottom: 31px;
+		}			
+
+		// RokSprocket Mosaic
+		.sprocket-mosaic-columns-1 li, .sprocket-mosaic-columns-2 li, .sprocket-mosaic-columns-3 li, .sprocket-mosaic-columns-4 li, .sprocket-mosaic-columns-5 li, .sprocket-mosaic-columns-6 li {width: 33.34%;}	
+
+		// Demo RokSprocket Strips 
+		.fp-roksprocket-strips-showcase {
+			&.rt-block {
+				margin: 15px 2px 15px 8px;	
+			}
+		}
+		.fp-roksprocket-strips-mainbottom {
+			&.rt-block {
+				margin: 15px 2px 15px 6px;	
+			}
+		}
+
+		// Copyright
+		#rt-copyright .rt-block {
+		    margin: 0 -20px 15px 40px;
+		    padding: 15px 0;
+			#gantry-totop {
+			    left: -45px;
+			    position: relative;
+			}		    
+		}
+
+	}	
+}
+
+// Mobile Modes
+@media (max-width: 767px) {
+	body {
+    	padding: 0;
+  	}
+	.visible-phone {
+		display: inherit !important;
+	}
+	.hidden-phone {
+		display: none !important;
+	}
+	.hidden-desktop {
+		display: inherit !important;
+	}
+	.visible-desktop {
+		display: none !important;
+	}
+	.hidden-large {
+		display: inherit !important;
+	}
+	.visible-large {
+		display: none !important;
+	}
+
+	body {
+		// Logo
+		.logo-block {
+			margin: 15px auto;
+			#rt-logo {
+				margin: 0 auto;
+			}			
+		}
+
+		// Heading and Title
+		h1 {
+			font-size: 220%;
+		}
+		h2, .title, .component-content h2 {
+			font-size: 170%;
+		}
+		h3 {
+			font-size: 145%;
+		}
+		h4 {
+			font-size: 100%;
+		}
+		h5 {
+			font-size: 95%;
+		}
+
+		// Header
+		#rt-header {
+			margin-top: 48px;
+		}	
+
+		// Adjust the following image height to match your actual RokSprocket Strips content
+		.fp-roksprocket-strips-showcase {
+			.cols-4 > li {
+				width: 50%;
+			}	
+			.sprocket-strips-content {
+				height: 135px;
+			}			
+		}		
+
+		// RokSprocket Strips		
+		.fp-roksprocket-strips-mainbottom {
+			.cols-4 > li {
+				width: 50%;
+			}		
+		}
+
+		// RokSprocket Tabs
+		.sprocket-tabs-nav li .sprocket-tabs-inner {
+			padding: 12px 20px;
+		}			
+		.fp-roksprocket-tabs {
+			.sprocket-tabs .readon {
+				margin: 0 0 0 96px;
+			}			
+		}
+			
+		// Featured Article
+		.img-intro-left {
+			width: 200px !important;
+		}
+
+		// Popup Login
+		.rt-popuplogin {
+			display: none;
+		}
+		
+		// Custom Demo
+		.rt-mobile-width-20 {
+			width: 20% !important;
+		}
+		.rt-mobile-width-80 {
+			width: 80% !important;
+		}		
+		.fp-footer-a {
+			margin-right: 10px;
+		}
+		.fp-footer-b {
+			margin-left: 10px;
+		}		
+	}	
+
+	// Joomla Core
+	body .component-content {
+		.column-1, .column-2, .column-3, .column-4 {
+			width: 100% !important;
+			float: none !important;
+			margin: 0 !important;
+		}
+	}
+
+	// Features
+	body {
+		#gantry-totop {
+			float: none;
+			display: block;
+			margin: -20px -15px;
+			padding: 8px 15px;
+			text-align: center;
+			width: 100%;
+		}		
+	}
+
+
+	// Extras
+	.gantry-width-20, .gantry-width-25, .gantry-width-30, .gantry-width-33, .gantry-width-40, .gantry-width-50, .gantry-width-60, .gantry-width-66, .gantry-width-70, .gantry-width-75, .gantry-width-80 {
+		width: 100%;
+	}
+	.gantry-width-spacer {
+		margin: 5px;
+	}
+
+	.row {
+		margin: 0;
+		display: block;
+
+		.cell {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.form-horizontal {
+		.control-group {
+			.control-label {
+				float:none;
+				width: auto;
+				text-align:left;
+			}
+			.controls {
+				margin-left: 0;
+			}
+		}
+	}
+	select {
+		width: 100%;
+	}
+}
+
+// Small Screen Mobile Modes
+@media only screen and (max-width: 480px) {
+	body {
+		// Heading and Title
+		h1 {
+			font-size: 205%;
+		}
+		h2, .title, .component-content h2 {
+			font-size: 155%;
+			line-height: 30px;
+		}
+		h3 {
+			font-size: 130%;
+		}
+		h4 {
+			font-size: 95%;
+		}
+		h5 {
+			font-size: 90%;
+		}	
+
+		// Container 
+		.rt-container {
+			width: 100%;
+		}		
+
+		// Adjust the following image height to match your actual RokSprocket Strips content
+		.fp-roksprocket-strips-showcase {
+			&.rt-block {
+				margin: 15px 0;
+			}				
+			.sprocket-strips-content .sprocket-strips-title {
+				font-size: 150% !important;
+				margin: 5px 0 !important;
+			}			
+			.sprocket-strips-content {
+				font-size: 80% !important;
+				height: 65px;
+				overflow: hidden;
+			}
+		}			
+
+		// RokSprocket Strips MainBottom
+		.fp-roksprocket-strips-mainbottom {
+			&.rt-block {
+				margin: 15px 0;
+			}	
+		}	
+		.roksprocket-ellipsis {
+			display: none;
+		}
+
+		// RokSprocket Tabs
+		.sprocket-tabs-nav li .sprocket-tabs-inner {
+			padding: 6px;
+			font-size: 12px;
+		}		
+		.fp-roksprocket-tabs {
+			.sprocket-tabs .readon {
+				margin: 0 0 0 25%;
+			}			
+		}		
+
+		// RokSprocket Mosaic
+		.sprocket-mosaic-columns-1 li, .sprocket-mosaic-columns-2 li, .sprocket-mosaic-columns-3 li, .sprocket-mosaic-columns-4 li, .sprocket-mosaic-columns-5 li, .sprocket-mosaic-columns-6 li {width: 100%;}
+
+		// Featured Article
+		.img-intro-left {
+			width: 125px !important;
+		}		
+		.rt-published-date {
+			font-size: 80%;
+			padding: 5px 8px 3px 8px;
+			.rt-date-day {
+				font-size: 1.2em;
+			}			
+		}
+	}
+}	
+
+// RokSprocket Mosaic MediaQueries
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	body {
+		.sprocket-mosaic-columns-1 li, .sprocket-mosaic-columns-2 li, .sprocket-mosaic-columns-3 li, .sprocket-mosaic-columns-4 li, .sprocket-mosaic-columns-5 li, .sprocket-mosaic-columns-6 li {width: 50%;}
+	}
+}
+
+// RokSprocket Strips MediaQueries
+@media 
+only screen and (min-width: 1195px) and (max-width: 1315px),
+only screen and (min-width: 960px) and (max-width: 1070px),
+only screen and (min-width: 768px) and (max-width: 880px),
+only screen and (min-width: 482px) and (max-width: 600px),
+only screen and (max-width: 480px) {
+	body {
+		.sprocket-strips {
+			.sprocket-strips-arrows .arrow {
+				background: #000000;
+				color: #ffffff;
+				&.prev {
+					left: -12px;
+				}
+				&.next {
+					right: -12px;
+				}
+			}
+		}	
+	}
+}

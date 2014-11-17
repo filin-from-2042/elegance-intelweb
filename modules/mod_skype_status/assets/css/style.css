@@ -1,0 +1,14 @@
+
+.skype-status-module a.skype-status {
+	display: block;
+	width: 100%;
+	text-align: center;
+	min-height: 44px;
+}
+
+.skype-status-module a:hover.skype-status,
+.skype-status-module a:active.skype-status,
+.skype-status-module a:focus.skype-status {
+	background: none;
+	color: none;
+}

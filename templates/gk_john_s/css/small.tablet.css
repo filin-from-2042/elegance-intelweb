@@ -1,0 +1,125 @@
+/*
+#------------------------------------------------------------------------
+# John S. - March Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2014 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+#gkContent, 
+#gkSidebar {
+	width: 100% !important;
+}
+#gkSidebar .box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px!important;
+}
+#gkSidebar {
+	padding: 0!important;
+}
+
+#gkSidebar .box:first-child {
+	padding-top: 10px!important;
+}
+#gkSidebar .box {
+	border-top: none!important;
+	float: left;
+	margin-top: 0!important;
+	margin-bottom: 30px!important;
+	width: 50%;
+}
+#gkSidebar.gkOnlyOne .box {
+	width: 100%!important;
+}
+#gkSidebar .box:nth-child(2n+1) {
+	clear: both!important;
+}
+
+/* Frontpage */
+.gk-header1 {
+	padding: 140px 5% 140px 5%;
+}
+.gk-header1 h1 {
+	font-size: 32px;
+	letter-spacing: -2px;
+}
+.gk-header1 p {
+	font-size: 13px;
+}
+.gk-header2 {
+	padding: 120px 4%;
+}
+.gk-header3 {
+	padding: 120px 5%;
+}
+#gkHeader #gkLogo {
+	top: 32px;
+}
+#gkLogo, 
+#gkLogo.cssLogo,
+#gkLogoSmall, 
+#gkLogoSmall.cssLogo {
+	height: 38px!important;
+	width: 90px!important;
+}
+.box.big-title .header, .box.big-title > .header {
+	font-size: 48px!important;
+}
+.box.big-title .header i, .box.big-title > .header i {
+	font-size: 36px;
+}
+.box.big-title .header.title-hover span:nth-child(2),
+.box.big-title .header.title-hover span:nth-child(3),
+.box.big-title .header.title-hover span:nth-child(4),
+.box.big-title .header.title-hover span:nth-child(5) {
+	margin-top: -38px; 
+}
+.gkNspPM-Portfolio2 .gkImagesWrapper > a {
+	padding: 5px;
+}
+.gkNspPM-Portfolio2 .gkImagesWrapper {
+	padding: 45px 0;
+}
+.gkNspPM-Portfolio2 .gkPortfolioTitle {
+	font-size: 20px;
+	margin-bottom: 18px;
+}
+.gkNspPM-Portfolio2 .gkPortfolioCategory, 
+.gkNspPM-Portfolio2 .gkPortfolioAuthor, 
+.gkNspPM-Portfolio2 .gkPortfolioDate {
+	font-size: 12px;
+	padding: 10px 0;
+}
+.gkColumnLeft p {
+	font-size: 14px;
+}
+.gkTeam figure {
+	padding: 0 4px;
+}
+.gkTeam h3 {
+	margin: 24px 0 10px 0;
+}
+.gkContactForm {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	-o-box-sizing: content-box;
+	box-sizing: content-box;
+	margin: 250px -20px 0 -20px;
+	padding: 20px;
+	width: 100%;
+}
+.gkMap.active {
+	bottom: auto;
+	top: 0;
+}
+
+/* Other */
+.gkPriceTable dd {
+	font-size: 13px;
+}
+

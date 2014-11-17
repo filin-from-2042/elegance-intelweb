@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template">
+        <name>elegance</name>
+        <creationDate>2008-05-01</creationDate>
+        <author>filin_from_2042</author>
+        <authorEmail>john@example.com</authorEmail>
+        <authorUrl>http://www.example.com</authorUrl>
+        <copyright>John Doe 2008</copyright>
+        <license>GNU/GPL</license>
+        <version>1.0.2</version>
+        <description>elegance</description>
+        <files>
+                <folder>css</folder>
+				<folder>fonts</folder>
+				<folder>images</folder>
+				<folder>js</folder>
+				<filename>index.html</filename>
+				<filename>contact.php</filename>
+				<filename>templateDetails.xml</filename>
+				<filename>template_preview.png</filename>
+				<filename>template_thumbnail.png</filename>
+				<filename>favicon.ico</filename>
+        </files>
+        <positions>
+                <position>position-menu</position>
+                <position>position-about</position>
+                <position>position-services</position>
+        </positions>
+</extension>
