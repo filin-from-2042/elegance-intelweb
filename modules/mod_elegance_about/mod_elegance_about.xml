@@ -14,9 +14,11 @@
 <config>
     <fields name="params">
         <fieldset name="basic">
-            <field name="header" type="text" default="default" label="Заголовок" description="Текстовая заголовка блока" />
-            <field name="sub_header" type="text" default="default" label="Подзаголовок" description="Текстовая подзаголовка" />
-            <field name="text" type="editor" default="default" label="Текст блока" description="Текстовая информация блока, выводимая на сайте" />
+            <field name="header" type="text" default="default" label="Заголовок блока 'О компании'" description="Заголовок блока 'О компании'" />
+            <field name="sub_header" type="text" default="default" label="Подзаголовок блока 'О компании'" description="Подзаголовок блока 'О компании'" />
+            <field name="text" type="editor" default="default" label="Текст Текстовая информация блока 'О компании'" description="Текстовая информация блока 'О компании'" filter="safehtml"/>
+            <field name="why_header" type="text" label="Загловок блока 'Почему мы'" description="Заголовок блока 'Почему мы'" />
+            <field name="why_text" type="editor" label="Текст блока 'Почему мы'" description="Текстовая информация блока 'Почему мы'" filter="safehtml"/>
          </fieldset>
         <fieldset name="advanced">
             <field name="layout" type="modulelayout"

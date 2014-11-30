@@ -1,3 +1,8 @@
+
+<!--///////////////////////////////////////////////////////
+       // About section
+       //////////////////////////////////////////////////////////-->
+
 <div class="about-parlex" id="about">
     <section class="parlex7-back">
       <div class="w-container">
@@ -16,3 +21,40 @@
       </div>
     </section>
   </div>
+
+<!--///////////////////////////////////////////////////////
+       // End about section
+       //////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////
+       // Who We Are Section
+       //////////////////////////////////////////////////////////-->
+
+
+<div class="exp service-parlex">
+    <div class="exp-back">
+        <div class="w-container">
+            <div id="who-v-animation">
+                <div class="wrap">
+                    <div class="w-row exp-des">
+                        <div class="w-col w-col-12 exp-col1">
+                            <div class="col1-div">
+                                <div class="experinc-box why_we">
+                                    <h3 class="experinc-box-h3"><?=$cWhyHeader?></h3>
+                                    <p><?=$cWhyText?></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--///////////////////////////////////////////////////////
+       // End Who We Are section
+      //////////////////////////////////////////////////////////-->

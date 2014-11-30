@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+<name>elegance_portfolio</name>
+<creationDate>November 2014</creationDate>
+<author>filin_from_2042</author>
+<copyright>Copyright Info</copyright>
+<license>Because fuck you!</license>
+<version>1.0</version>
+<description>Настройки блока Portfolio в шаблоне 'Elegance'</description>
+<files>
+    <filename module="mod_elegance_portfolio">mod_elegance_portfolio.php</filename>
+    <filename>mod_elegance_portfolio.xml</filename>
+</files>
+<config>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="header" type="text" default="default" label="Заголовок блока 'Портфолио" description="Загловок блока 'Портфолио'" />
+            <field name="sub_header" type="text" default="default" label="Подзаголовок" description="Подзаголовок блока 'Портфолио'" />
+            <field name="text" type="editor" default="default" label="Текст блока" description="Текстовая информация блока 'Портфолио'" />
+            <field name="elektrika_title" type="text" default="default" label="Название проекта 'Электрика'" description="Заголовок проекта 'Электрика'" />
+            <field name="elektrika_description" type="text" default="default" label="Описание проекта 'Электрика'" description="Описание проекта 'Электрика'" />
+            <field name="elektrika_preview_image" type="media" default="default" label="Изображение 'Электрика' (300x225)" description="Изображение 'Электрика'" />
+            <field name="elektrika_alt_image" type="text" default="default" label="Alt изображения 'Электрика'" description="Alt изображения 'Электрика'" />
+            <field name="elektrika_link" type="text" default="default" label="Ссылка на проект 'Электрика'" description="Ссылка на проект 'Электрика'" />
+         </fieldset>
+        <fieldset name="advanced">
+            <field name="layout" type="modulelayout"
+                   label="JFIELD_ALT_LAYOUT_LABEL"
+                   description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+        </fieldset>
+    </fields>
+</config>
+
+</extension>
+

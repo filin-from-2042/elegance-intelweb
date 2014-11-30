@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+<name>elegance_contact</name>
+<creationDate>November 2014</creationDate>
+<author>filin_from_2042</author>
+<copyright>Copyright Info</copyright>
+<license>Because fuck you!</license>
+<version>1.0</version>
+<description>Настройки блока Contact в шаблоне 'Elegance'</description>
+<files>
+	<folder>tmpl</folder>	
+    <filename module="mod_elegance_contact">mod_elegance_contact.php</filename>
+	<filename>index.html</filename>
+    <filename>mod_elegance_contact.xml</filename>
+</files>
+<config>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="header" type="text" default="default" label="Заголовок" description="Текстовая заголовка блока" />
+            <field name="sub_header" type="text" default="default" label="Подзаголовок" description="Текстовая подзаголовка" />
+            <field name="text" type="editor" default="default" label="Текст блока" description="Текстовая информация блока, выводимая на сайте" filter="safehtml"/>
+            <field name="text" type="editor" default="default" label="Текст блока" description="Текстовая информация блока, выводимая на сайте" filter="safehtml"/>
+         </fieldset>
+        <fieldset name="advanced">
+            <field name="layout" type="modulelayout"
+                   label="JFIELD_ALT_LAYOUT_LABEL"
+                   description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+        </fieldset>
+    </fields>
+</config>
+
+</extension>
+

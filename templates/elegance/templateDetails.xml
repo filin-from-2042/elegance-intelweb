@@ -25,5 +25,10 @@
                 <position>position-menu</position>
                 <position>position-about</position>
                 <position>position-services</position>
+                <position>position-contact</position>
+                <position>position-develop</position>
+                <position>position-our-process</position>
+                <position>position-portfolio</position>
+                <position>position-team</position>
         </positions>
 </extension>

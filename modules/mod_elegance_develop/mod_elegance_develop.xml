@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+<name>elegance_develop</name>
+<creationDate>November 2014</creationDate>
+<author>filin_from_2042</author>
+<copyright>Copyright Info</copyright>
+<license>Because fuck you!</license>
+<version>1.0</version>
+<description>Настройки блока Develop в шаблоне 'Elegance'</description>
+<files>
+    <filename module="mod_elegance_develop">mod_elegance_develop.php</filename>
+    <filename>mod_elegance_develop.xml</filename>
+</files>
+<config>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="header" type="text" label="Заголовок" description="Заголовка" />
+            <field name="sub_header" type="text" label="Подзаголовок" description="Подзаголовка" />
+            <field name="text" type="editor" width="500" height="150" label="Текст блока" description="Текстовая информация блока, выводимая на сайте" />
+            <field name="plan_1_header" type="text" label="Тариф 1" description="Заголовок 1го тарифа" />
+            <field name="plan_1_price" type="text" label="Цена 1" description="Цена тарифа 1" />
+            <field name="plan_1_text" type="editor" width="500" height="150" label="Текст 1" description="Текс тарифа 1" filter="safehtml"/>
+            <field name="plan_2_header" type="text" label="Тариф 2" description="Заголовок 2го тарифа" />
+            <field name="plan_2_price" type="text" label="Цена 2" description="Цена тарифа 2" />
+            <field name="plan_2_text" type="editor" width="500" height="150" label="Текст 2" description="Текс тарифа 2" filter="safehtml"/>
+            <field name="plan_3_header" type="text" label="Тариф 3" description="Заголовок 3го тарифа" />
+            <field name="plan_3_price" type="text" label="Цена 3" description="Цена тарифа 3" />
+            <field name="plan_3_text" type="editor" width="500" height="150" label="Текст 3" description="Текс тарифа 3" filter="safehtml"/>
+            <field name="plan_4_header" type="text" label="Тариф 4" description="Заголовок 4го тарифа" />
+            <field name="plan_4_price" type="text" label="Цена 4" description="Цена тарифа 4" />
+            <field name="plan_4_text" type="editor" width="500" height="150" label="Текст 4" description="Текс тарифа 4" filter="safehtml"/>
+         </fieldset>
+        <fieldset name="advanced">
+            <field name="layout" type="modulelayout"
+                   label="JFIELD_ALT_LAYOUT_LABEL"
+                   description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+        </fieldset>
+    </fields>
+</config>
+
+</extension>
+
