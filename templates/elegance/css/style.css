@@ -1514,15 +1514,15 @@ font-size: 18px;
 }
 
 .hi-icon-mobile:before {
-  content: "\e009";
+  content: "\e00b";
 }
 
 .hi-icon-screen:before {
-  content: "\e00a";
+  content: "\e008";
 }
 
 .hi-icon-earth:before {
-  content: "\e002";
+  content: "\e00a";
 }
 
 .hi-icon-support:before {
@@ -1530,7 +1530,7 @@ font-size: 18px;
 }
 
 .hi-icon-locked:before {
-  content: "\e001";
+  content: "\e006";
 }
 
 .hi-icon-cog:before {

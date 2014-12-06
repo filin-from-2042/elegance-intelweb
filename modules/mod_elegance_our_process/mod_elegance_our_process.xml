@@ -16,8 +16,18 @@
         <fieldset name="basic">
             <field name="header" type="text" default="default" label="Заголовок" description="Текстовая заголовка блока" />
             <field name="sub_header" type="text" default="default" label="Подзаголовок" description="Текстовая подзаголовка" />
-            <field name="text" type="editor" default="default" label="Текст блока" description="Текстовая информация блока, выводимая на сайте" filter="safehtml"/>
-            <field name="text" type="editor" default="default" label="Текст блока" description="Текстовая информация блока, выводимая на сайте" filter="safehtml"/>
+
+            <field name="concept_header" type="text" default="default" label="Заголовок 'Разработка  концепции'" description="Заголовок 'Разработка  концепции'" filter="safehtml"/>
+            <field name="concept_text" width="500" height="150" type="editor" default="default" label="Текст 'Разработка  концепции'" description="Текст 'Разработка  концепции'" filter="safehtml"/>
+
+            <field name="specification_header" type="text" default="default" label="Заголовок 'Пишем техническое задание'" description="Заголовок 'Пишем техническое задание'" filter="safehtml"/>
+            <field name="specification_text" width="500" height="150" type="editor" default="default" label="Текст 'Пишем техническое задание'" description="Текст 'Пишем техническое задание'" filter="safehtml"/>
+
+            <field name="layout_header" type="text" default="default" label="Заголовок 'Создаем дизайн-макет'" description="Заголовок 'Создаем дизайн-макет'" filter="safehtml"/>
+            <field name="layout_text" width="500" height="150" type="editor" default="default" label="Текст 'Создаем дизайн-макет'" description="Текс 'Создаем дизайн-макет'" filter="safehtml"/>
+
+            <field name="programming_header" type="text" default="default" label="Заголовок 'Программируем'" description="Заголовок 'Программируем'" filter="safehtml"/>
+            <field name="programming_text" width="500" height="150" type="editor" default="default" label="Текст 'Программируем'" description="Текст 'Программируем'" filter="safehtml"/>
          </fieldset>
         <fieldset name="advanced">
             <field name="layout" type="modulelayout"
