@@ -14,10 +14,21 @@
 <config>
     <fields name="params">
         <fieldset name="basic">
-            <field name="header" type="text" default="default" label="Заголовок" description="Текстовая заголовка блока" />
-            <field name="sub_header" type="text" default="default" label="Подзаголовок" description="Текстовая подзаголовка" />
-            <field name="text" type="editor" default="default" label="Текст блока" description="Текстовая информация блока, выводимая на сайте" filter="safehtml"/>
-            <field name="text" type="editor" default="default" label="Текст блока" description="Текстовая информация блока, выводимая на сайте" filter="safehtml"/>
+            <field name="header" type="text" default="заголовок" label="Заголовок" description="Текстовая заголовка блока" />
+            <field name="sub_header" type="text" default="подзаголовок" label="Подзаголовок" description="Текстовая подзаголовка" />
+
+            <field name="photo_first" type="media" default="фото" label="Фото сотрудника" description="Фото сотрудника" filter="safehtml"/>
+            <field name="name_first" type="text" default="имя" label="Имя сотрудника" description="Имя сотрудника" filter="safehtml"/>
+            <field name="desc_first" type="text" default="должность" label="Должность сотрудника" description="Должность сотрудника" filter="safehtml"/>
+
+            <field name="photo_second" type="media" default="Фото" label="Фото сотрудника" description="Фото сотрудника" filter="safehtml"/>
+            <field name="name_second" type="text" default="имя" label="Имя сотрудника" description="Имя сотрудника" filter="safehtml"/>
+            <field name="desc_second" type="text" default="должность" label="Должность сотрудника" description="Должность сотрудника" filter="safehtml"/>
+
+            <field name="photo_third" type="media" default="имя" label="Фото сотрудника" description="Фото сотрудника" filter="safehtml"/>
+            <field name="name_third" type="text" default="имя" label="Имя сотрудника" description="Имя сотрудника" filter="safehtml"/>
+            <field name="desc_third" type="text" default="должность" label="Должность сотрудника" description="Должность сотрудника" filter="safehtml"/>
+
          </fieldset>
         <fieldset name="advanced">
             <field name="layout" type="modulelayout"
