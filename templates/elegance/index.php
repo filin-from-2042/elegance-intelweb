@@ -11,6 +11,7 @@ JLoader::import('joomla.filesystem.file');
   <meta charset="utf-8">
   <title>Elegance</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/jquery-ui.min.css">
   <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/normal.css">
   <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/style.css">
   <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/animation.css">
@@ -256,6 +257,7 @@ JLoader::import('joomla.filesystem.file');
   <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/jquery.js"></script>
   <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/normal.js"></script>
   <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/carousels.js"></script>
   <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/slider-modernizr.js"></script>
   <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/classie.js"></script>
@@ -264,6 +266,7 @@ JLoader::import('joomla.filesystem.file');
   <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/modernizr.js"></script>
   <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/animation.js"></script>
   <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/contact-form.js"></script>
+  <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/develop.js"></script>
 
 </body>
 </html>
