@@ -16,10 +16,11 @@
 <config>
     <fields name="params">
         <fieldset name="basic">
-            <field name="header" type="text" default="default" label="Заголовок" description="Текстовая заголовка блока" />
-            <field name="sub_header" type="text" default="default" label="Подзаголовок" description="Текстовая подзаголовка" />
-            <field name="text" type="editor" default="default" label="Текст блока" description="Текстовая информация блока, выводимая на сайте" filter="safehtml"/>
-            <field name="text" type="editor" default="default" label="Текст блока" description="Текстовая информация блока, выводимая на сайте" filter="safehtml"/>
+            <field name="header" type="text" default="" label="Заголовок 'Контакты'" description="Заголовок 'Контакты'" />
+            <field name="sub_header" type="text" default="" label="Подзаголовок 'Контакты'" description="Подзаголовок 'Контакты'" />
+            <field name="mail_us" type="text" default="" label="Напишите нам" description="Напишите нам" />
+            <field name="call_us" type="text" default="" label="Позвоните нам" description="Позвоните нам" />
+
          </fieldset>
         <fieldset name="advanced">
             <field name="layout" type="modulelayout"

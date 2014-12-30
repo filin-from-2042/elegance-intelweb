@@ -263,6 +263,7 @@ JLoader::import('joomla.filesystem.file');
   <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/toucheffects.js"></script>
   <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/modernizr.js"></script>
   <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/animation.js"></script>
+  <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/contact-form.js"></script>
 
 </body>
 </html>
