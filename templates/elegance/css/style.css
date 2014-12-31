@@ -59,7 +59,8 @@ h6 {
 }
 p {
   margin-bottom: 5px;
-  color: #d6d6d6;
+  /*color: #d6d6d6;*/
+  color: white;
   text-align: left;
 }
 .button {
@@ -1971,4 +1972,10 @@ html { overflow-y: scroll; }
     border: none;
     text-align: center;
     padding: 23px 16px;
+}
+
+
+.footer-parlex .w-nav-menu{
+    float: none;
+    text-align: center;
 }

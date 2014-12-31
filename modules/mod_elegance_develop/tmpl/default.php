@@ -11,7 +11,7 @@
                     <div class="our-plan-text"><?=$cSubHeader?></div>
                 </div>
                 <div class="sepreater"></div>
-                <p class="our-plan-paragraph"><?=$cContent?></p>
+                <div class="our-plan-paragraph"><?=$cContent?></div>
                 <div class="w-row plans-details">
                     <div class="w-col w-col-3" dialog="dialog-1" >
                         <div class="plan1">
@@ -27,7 +27,7 @@
                             <a class="plan-1-butn" href="#">Подробно</a>
                         </div>
                     </div>
-                    <div class="w-col w-col-3" dialog="dialog-2"">
+                    <div class="w-col w-col-3" dialog="dialog-2">
                         <div class="plan1 plan2">
                             <div class="plan2-ser2 service_header">
                                 <h4><?=$cSecondHeader?></h4>

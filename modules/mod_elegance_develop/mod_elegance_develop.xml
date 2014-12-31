@@ -16,7 +16,7 @@
         <fieldset name="basic">
             <field name="header" type="text" label="Заголовок" description="Заголовка" />
             <field name="sub_header" type="text" label="Подзаголовок" description="Подзаголовка" />
-            <field name="text" type="editor" width="500" height="150" label="Текст блока" description="Текстовая информация блока, выводимая на сайте" />
+            <field name="text" type="editor" width="500" height="150" label="Текст блока" description="Текстовая информация блока, выводимая на сайте"  filter="safehtml"/>
             <field name="plan_1_header" type="text" label="Тариф 1" description="Заголовок 1го тарифа" />
             <field name="plan_1_price" type="text" label="Цена 1" description="Цена тарифа 1" />
             <field name="plan_1_text" type="editor" width="500" height="150" label="Текст 1" description="Текс тарифа 1" filter="safehtml"/>
