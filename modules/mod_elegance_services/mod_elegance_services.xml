@@ -16,7 +16,7 @@
         <fieldset name="basic">
             <field name="header" type="text" default="Services" label="Заголовок" description="Текстовая заголовка блока" />
             <field name="sub_header" type="text" default="Sub-header" label="Подзаголовок" description="Текстовая подзаголовка" />
-            <field name="text" type="editor" default="Text" label="Текст блока" description="Текстовая информация блока, выводимая на сайте" />
+            <field name="text" type="editor" label="Текст блока" description="Текстовая информация блока, выводимая на сайте" />
 
             <field name="first_image" type="media" default="Text" label="Первое изображение" directory="elegance"/>
             <field name="first_image_text" type="text" default="Text" label="Подпись первого изображения" />
